@@ -1,0 +1,67 @@
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    flex-direction: column;  
+    min-height: 100vh;       
+}
+
+/* Style for each box */
+.box {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 90px 10px;                
+    margin: 20px;
+    width: 630px;                  
+    height: auto;                   
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+/* Style for the white line */
+.line {
+    width: 100%;
+    height: 2px;                
+    background-color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Style for buttons */
+.button {
+    background-color: #0D141B;
+    color: #ffffff;
+    padding: 8px 15px;             
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 50px;            
+    font-size: 16px;               
+}
+
+.chat-slider-custom {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 600px;
+}
+
+.chat-slider-custom--box {
+    position: absolute;
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+    opacity: 0;
+
+    background-color: #000000;
+    color: #ffffff;
+    padding: 90px 10px;                
+    margin: 20px;
+    width: 630px;                  
+    height: auto;                   
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.loaded .chat-slider-custom--box {
+    opacity: 1;
+}
+
+.moving.chat-slider-custom--box {
+    transition: none;
+}
